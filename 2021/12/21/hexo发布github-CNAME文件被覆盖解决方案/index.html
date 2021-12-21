@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://www.zhuxingfu.com">
-  <title>markdown基础之typora入门总结 | Afu blog</title>
+  <title>hexo发布github CNAME文件被覆盖解决方案 | Afu blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="看了半天markdown，准备一天之内掌握typora 😂 虽然语法很简单，感觉几分钟就学会了，但是内容还是不少，以防以后忘记，所以总结整理下，做个笔记。 一、标题1# 标题名字 （#的个数代表标题级数，最大支持六级）  示例： 123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题    效果： 一级标题二级标题三级标题四级标题五级标">
+  <meta name="description" content="今天使用hexo发布代码至github的过程中，发现一个很奇怪的现象，就是只要我执行hexo d 命令进行发布，我之前在github上生成的CNAME文件就会莫名奇妙地消失，导致我解析的域名无法访问，试了几次结果都一样，百思不得其解，经过一番折腾，终于找到了解决方案 ，解决过程如下：  将仓库CNAME文件拷贝到本地项目目录的source文件夹下&#x2F;yourBlogRootPath&#x2F;source">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown基础之typora入门总结">
-<meta property="og:url" content="https://www.zhuxingfu.com/2021/12/21/markdown%E5%9F%BA%E7%A1%80%E4%B9%8Btypora%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:title" content="hexo发布github CNAME文件被覆盖解决方案">
+<meta property="og:url" content="https://www.zhuxingfu.com/2021/12/21/hexo%E5%8F%91%E5%B8%83github-CNAME%E6%96%87%E4%BB%B6%E8%A2%AB%E8%A6%86%E7%9B%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="Afu blog">
-<meta property="og:description" content="看了半天markdown，准备一天之内掌握typora 😂 虽然语法很简单，感觉几分钟就学会了，但是内容还是不少，以防以后忘记，所以总结整理下，做个笔记。 一、标题1# 标题名字 （#的个数代表标题级数，最大支持六级）  示例： 123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题    效果： 一级标题二级标题三级标题四级标题五级标">
+<meta property="og:description" content="今天使用hexo发布代码至github的过程中，发现一个很奇怪的现象，就是只要我执行hexo d 命令进行发布，我之前在github上生成的CNAME文件就会莫名奇妙地消失，导致我解析的域名无法访问，试了几次结果都一样，百思不得其解，经过一番折腾，终于找到了解决方案 ，解决过程如下：  将仓库CNAME文件拷贝到本地项目目录的source文件夹下&#x2F;yourBlogRootPath&#x2F;source">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-12-20T17:15:43.000Z">
-<meta property="article:modified_time" content="2021-12-20T17:17:31.204Z">
+<meta property="article:published_time" content="2021-12-21T04:31:44.000Z">
+<meta property="article:modified_time" content="2021-12-21T04:46:27.492Z">
 <meta property="article:author" content="Afu">
 <meta property="article:tag" content="IT技术 架构 软件架构 技术分享">
 <meta name="twitter:card" content="summary">
@@ -151,83 +151,38 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-markdown基础之typora入门总结" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-hexo发布github-CNAME文件被覆盖解决方案" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      markdown基础之typora入门总结
+      hexo发布github CNAME文件被覆盖解决方案
     </h1>
   
 
         
-        <a href="/2021/12/21/markdown%E5%9F%BA%E7%A1%80%E4%B9%8Btypora%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2021-12-20T17:15:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-21</time>
+        <a href="/2021/12/21/hexo%E5%8F%91%E5%B8%83github-CNAME%E6%96%87%E4%BB%B6%E8%A2%AB%E8%A6%86%E7%9B%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="archive-article-date">
+  	<time datetime="2021-12-21T04:31:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-21</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>看了半天markdown，准备一天之内掌握typora 😂 虽然语法很简单，感觉几分钟就学会了，但是内容还是不少，以防以后忘记，所以总结整理下，做个笔记。</p>
-<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 标题名字 （#的个数代表标题级数，最大支持六级）</span></span><br></pre></td></tr></table></figure>
-
-<p>示例：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"><span class="section">#### 四级标题</span></span><br><span class="line"><span class="section">##### 五级标题</span></span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>效果：</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h1 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h1><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>######<strong>最大支持六级</strong>######</p>
-<hr>
-<h2 id="二、文字"><a href="#二、文字" class="headerlink" title="二、文字"></a>二、文字</h2><ul>
-<li><h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><p>需要添加删除线的文字内容两边分别使用两个~包起来</p>
-<p>示例：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是 ~~删除线~~</span><br></pre></td></tr></table></figure>
-
-<p>效果：</p>
-<p>这是 <del>删除线</del></p>
+        <p>今天使用hexo发布代码至github的过程中，发现一个很奇怪的现象，就是只要我执行<code>hexo d</code> 命令进行发布，我之前在github上生成的CNAME文件就会莫名奇妙地消失，导致我解析的域名无法访问，试了几次结果都一样，百思不得其解，经过一番折腾，终于找到了解决方案 ，解决过程如下：</p>
+<ol>
+<li><p>将仓库CNAME文件拷贝到本地项目目录的source文件夹下<code>/yourBlogRootPath/source</code></p>
 </li>
-<li><h3 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h3><p>需要斜体的文字内容左右两边各使用一个*包起来</p>
-<p>示例：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是 <span class="emphasis">*斜体*</span></span><br></pre></td></tr></table></figure>
-
-<p>效果：</p>
-<p>这是 <em>斜体</em></p>
+<li><p>执行<code>hexo clean</code> 清理</p>
 </li>
-<li><h3 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h3><p>需要加粗的文字内容两边分别使用两个*包起来</p>
-<p>示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是 **加粗**</span><br></pre></td></tr></table></figure>
-
-<p>效果：</p>
-<p>这是 <strong>加粗</strong></p>
+<li><p>执行 <code>hexo g</code> 重新生成</p>
 </li>
-<li><h3 id="斜体-加粗"><a href="#斜体-加粗" class="headerlink" title="斜体+加粗"></a>斜体+加粗</h3><p>需要斜体加粗的文字内容两边分别使用三个*包起来</p>
-<p>示例：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是 <span class="strong">**<span class="emphasis">*斜体并加粗<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br></pre></td></tr></table></figure>
-
-<p>效果：</p>
-<p>这是 <em><strong>斜体并加粗</strong></em></p>
+<li><p>执行 <code>hexo d</code> 重新发布即可</p>
+<p>查看下github仓库，看看刚才添加的CNAME文件是不是已经发布成功了，如果其他文件也存在这种发布后消失的情况，也可以尝试采用这种解决方案。</p>
 </li>
-<li><p>下划线</p>
-<p>markdown并无下划线的原生语法，但是可以使用HTML语法</p>
-<p>示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是 &lt;u&gt;下划线&lt;/u&gt;</span><br></pre></td></tr></table></figure>
-
-<p>效果：</p>
-<p>这是 <u>下划线</u></p>
-</li>
-<li><h3 id="高亮"><a href="#高亮" class="headerlink" title="高亮"></a>高亮</h3><p>需要高亮的文字两边使用两个=包起来</p>
-<p>示例：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是 ==高亮==</span><br></pre></td></tr></table></figure>
-
-<p>效果：</p>
-<p>这是 ==高亮==</p>
-<p>未完待续……</p>
-</li>
-</ul>
+</ol>
 
       
 
@@ -317,7 +272,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://www.zhuxingfu.com/2021/12/21/markdown%E5%9F%BA%E7%A1%80%E4%B9%8Btypora%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://www.zhuxingfu.com/2021/12/21/hexo%E5%8F%91%E5%B8%83github-CNAME%E6%96%87%E4%BB%B6%E8%A2%AB%E8%A6%86%E7%9B%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -331,18 +286,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/12/21/hexo%E5%8F%91%E5%B8%83github-CNAME%E6%96%87%E4%BB%B6%E8%A2%AB%E8%A6%86%E7%9B%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          hexo发布github CNAME文件被覆盖解决方案
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/12/20/%E5%8D%9A%E5%AE%A2%E7%AC%AC%E4%B8%80%E7%AF%87/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">博客第一篇</div>
+    <a href="/2021/12/21/markdown%E5%9F%BA%E7%A1%80%E4%B9%8Btypora%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">markdown基础之typora入门总结</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -370,7 +316,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="markdown基础之typora入门总结" data-title="markdown基础之typora入门总结" data-url="https://www.zhuxingfu.com/2021/12/21/markdown%E5%9F%BA%E7%A1%80%E4%B9%8Btypora%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/"></div>
+	<div class="ds-thread" data-thread-key="hexo发布github-CNAME文件被覆盖解决方案" data-title="hexo发布github CNAME文件被覆盖解决方案" data-url="https://www.zhuxingfu.com/2021/12/21/hexo%E5%8F%91%E5%B8%83github-CNAME%E6%96%87%E4%BB%B6%E8%A2%AB%E8%A6%86%E7%9B%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

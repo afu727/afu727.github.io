@@ -151,6 +151,80 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hexo发布github-CNAME文件被覆盖解决方案" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/21/hexo%E5%8F%91%E5%B8%83github-CNAME%E6%96%87%E4%BB%B6%E8%A2%AB%E8%A6%86%E7%9B%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">hexo发布github CNAME文件被覆盖解决方案</a>
+    </h1>
+  
+
+        
+        <a href="/2021/12/21/hexo%E5%8F%91%E5%B8%83github-CNAME%E6%96%87%E4%BB%B6%E8%A2%AB%E8%A6%86%E7%9B%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="archive-article-date">
+  	<time datetime="2021-12-21T04:31:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天使用hexo发布代码至github的过程中，发现一个很奇怪的现象，就是只要我执行<code>hexo d</code> 命令进行发布，我之前在github上生成的CNAME文件就会莫名奇妙地消失，导致我解析的域名无法访问，试了几次结果都一样，百思不得其解，经过一番折腾，终于找到了解决方案 ，解决过程如下：</p>
+<ol>
+<li><p>将仓库CNAME文件拷贝到本地项目目录的source文件夹下<code>/yourBlogRootPath/source</code></p>
+</li>
+<li><p>执行<code>hexo clean</code> 清理</p>
+</li>
+<li><p>执行 <code>hexo g</code> 重新生成</p>
+</li>
+<li><p>执行 <code>hexo d</code> 重新发布即可</p>
+<p>查看下github仓库，看看刚才添加的CNAME文件是不是已经发布成功了，如果其他文件也存在这种发布后消失的情况，也可以尝试采用这种解决方案。</p>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/12/21/hexo%E5%8F%91%E5%B8%83github-CNAME%E6%96%87%E4%BB%B6%E8%A2%AB%E8%A6%86%E7%9B%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-markdown基础之typora入门总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
