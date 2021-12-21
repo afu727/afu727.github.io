@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://www.zhuxingfu.com">
   <title>hexo发布github CNAME文件被覆盖解决方案 | Afu blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天使用hexo发布代码至github的过程中，发现一个很奇怪的现象，就是只要我执行hexo d 命令进行发布，我之前在github上生成的CNAME文件就会莫名奇妙地消失，导致我解析的域名无法访问，试了几次结果都一样，百思不得其解，经过一番折腾，终于找到了解决方案 ，解决过程如下：  将仓库CNAME文件拷贝到本地项目目录的source文件夹下&#x2F;yourBlogRootPath&#x2F;source">
+  <meta name="description" content="今天使用hexo发布代码至github的过程中，发现一个很奇怪的现象，就是只要我执行hexo d 命令进行发布，我之前在github上生成的CNAME文件就会莫名奇妙地消失，导致我解析的域名无法访问，试了几次结果都一样，百思不得其解，经过一番折腾，终于找到了解决方案 ，解决过程如下：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo发布github CNAME文件被覆盖解决方案">
 <meta property="og:url" content="https://www.zhuxingfu.com/2021/12/21/hexo%E5%8F%91%E5%B8%83github-CNAME%E6%96%87%E4%BB%B6%E8%A2%AB%E8%A6%86%E7%9B%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="Afu blog">
-<meta property="og:description" content="今天使用hexo发布代码至github的过程中，发现一个很奇怪的现象，就是只要我执行hexo d 命令进行发布，我之前在github上生成的CNAME文件就会莫名奇妙地消失，导致我解析的域名无法访问，试了几次结果都一样，百思不得其解，经过一番折腾，终于找到了解决方案 ，解决过程如下：  将仓库CNAME文件拷贝到本地项目目录的source文件夹下&#x2F;yourBlogRootPath&#x2F;source">
+<meta property="og:description" content="今天使用hexo发布代码至github的过程中，发现一个很奇怪的现象，就是只要我执行hexo d 命令进行发布，我之前在github上生成的CNAME文件就会莫名奇妙地消失，导致我解析的域名无法访问，试了几次结果都一样，百思不得其解，经过一番折腾，终于找到了解决方案 ，解决过程如下：">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-12-21T04:31:44.000Z">
-<meta property="article:modified_time" content="2021-12-21T04:46:27.492Z">
+<meta property="article:modified_time" content="2021-12-21T05:00:05.641Z">
 <meta property="article:author" content="Afu">
 <meta property="article:tag" content="IT技术 架构 软件架构 技术分享">
 <meta name="twitter:card" content="summary">
@@ -64,6 +64,9 @@
 	        
 			</ul>
 		</nav>
+		<nav>
+        总文章数 3
+    </nav>
 		<nav class="header-smart-menu">
     		
     			
@@ -88,7 +91,7 @@
 		        
 			</div>
 		</nav>
-	</header>		
+	</header>
 </div>
 
     </div>
@@ -166,12 +169,36 @@
         <a href="/2021/12/21/hexo%E5%8F%91%E5%B8%83github-CNAME%E6%96%87%E4%BB%B6%E8%A2%AB%E8%A6%86%E7%9B%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="archive-article-date">
   	<time datetime="2021-12-21T04:31:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-21</time>
 </a>
+        <!-- 需要添加的位置 -->
+                <!-- 开始添加字数统计-->
+                
+                  <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">211字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+
+                  
+                <!-- 添加完成 -->
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天使用hexo发布代码至github的过程中，发现一个很奇怪的现象，就是只要我执行<code>hexo d</code> 命令进行发布，我之前在github上生成的CNAME文件就会莫名奇妙地消失，导致我解析的域名无法访问，试了几次结果都一样，百思不得其解，经过一番折腾，终于找到了解决方案 ，解决过程如下：</p>
+        <p>今天使用hexo发布代码至github的过程中，发现一个很奇怪的现象，就是只要我执行<code>hexo d</code> 命令进行发布，我之前在github上生成的CNAME文件就会莫名奇妙地消失，导致我解析的域名无法访问，试了几次结果都一样，百思不得其解，经过一番折腾，终于找到了解决方案 ，解决过程如下：<span id="more"></span></p>
 <ol>
 <li><p>将仓库CNAME文件拷贝到本地项目目录的source文件夹下<code>/yourBlogRootPath/source</code></p>
 </li>
@@ -334,7 +361,7 @@
 </div>
 
   
-  
+
   
 
   
